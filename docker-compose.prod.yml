@@ -17,4 +17,4 @@ services:
 
 networks:
   psmo24_network:
-    external: true 
+    driver: bridge 

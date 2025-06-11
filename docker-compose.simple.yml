@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    container_name: psmo24_web
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    labels:
+      - "project=psmo24" 

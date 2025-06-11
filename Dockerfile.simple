@@ -1,0 +1,14 @@
+# Простой Dockerfile для быстрой отладки
+FROM nginx:alpine
+
+# Копируем файлы сайта
+COPY . /usr/share/nginx/html/
+
+# Копируем минимальную конфигурацию nginx
+COPY nginx-minimal.conf /etc/nginx/conf.d/default.conf
+
+# Открываем порт
+EXPOSE 80
+
+# Запускаем nginx
+CMD ["nginx", "-g", "daemon off;"] 
