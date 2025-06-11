@@ -4,6 +4,11 @@ README.md
 Dockerfile
 docker-compose*.yml
 deploy.sh
+update-sitemap.sh
 .DS_Store
 Thumbs.db
-*.log 
+*.log
+!robots.txt
+!sitemap.xml
+!.htaccess
+!site.webmanifest 

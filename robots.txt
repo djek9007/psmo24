@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+# Основные страницы
+Allow: /index.html
+Allow: /css/
+Allow: /js/
+Allow: /images/
+Allow: /webfonts/
+
+# Запрещаем индексацию служебных файлов
+Disallow: /*.log
+Disallow: /tmp/
+Disallow: /.git/
+
+# Указываем sitemap
+Sitemap: https://psmo24.kz/sitemap.xml
+
+# Время задержки для ботов
+Crawl-delay: 1 

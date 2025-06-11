@@ -1,0 +1,26 @@
+{
+    "name": "PSMO24 - Автоматизированная система медицинского осмотра",
+    "short_name": "PSMO24",
+    "description": "Система автоматизированного медицинского осмотра за 60 секунд в Казахстане",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#007bff",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "icon.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icon.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "categories": ["medical", "healthcare", "business"],
+    "lang": "ru",
+    "scope": "/",
+    "id": "psmo24-medical-system"
+} 
