@@ -12,6 +12,7 @@ docker-compose -f docker-compose.prod.yml down
 
 # Удаляем старые образы
 echo "🗑️ Удаляем старые образы..."
+docker rmi psmo24_web_php || true
 docker rmi psmo24_web || true
 
 # Собираем новый образ
