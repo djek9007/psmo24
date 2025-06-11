@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    container_name: psmo24_web
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    networks:
+      - psmo24_network
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.psmo24.rule=Host(`psmo24.kz`)"
+      - "traefik.http.routers.psmo24.entrypoints=websecure"
+      - "traefik.http.routers.psmo24.tls.certresolver=myresolver"
+
+networks:
+  psmo24_network:
+    external: true 
